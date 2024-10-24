@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schneider FreightPower® Load Search</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0056b3;
+        }
+        form {
+            margin-bottom: 20px;
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #004494;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {background-color: #f9f9f9;}
+        tr:hover {background-color: #f1f1f1;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Schneider FreightPower® Load Search</h1>
+        <form method="POST">
+            <label for="trailer_type">Trailer Type:</label>
+            <input type="text" id="trailer_type" name="trailer_type" placeholder="e.g., Power Only" required>
+
+            <label for="origin_city">Origin City:</label>
+            <input type="text" id="origin_city" name="origin_city" placeholder="City" required>
+
+            <label for="origin_state">Origin State:</label>
+            <input type="text" id="origin_state" name="origin_state" placeholder="State" required>
+
+            <label for="destination_city">Destination City:</label>
+            <input type="text" id="destination_city" name="destination_city" placeholder="City" required>
+
+            <label for="destination_state">Destination State:</label>
+            <input type="text" id="destination_state" name="destination_state" placeholder="State" required>
+
+            <label for="pickup_date">Pickup Date:</label>
+            <input type="date" id="pickup_date" name="pickup_date" required>
+
+            <label for="delivery_date">Delivery Date:</label>
+            <input type="date" id="delivery_date" name="delivery_date" required>
+
+            <label>
+                <input type="checkbox" id="is_hazardous" name="is_hazardous">
+                Hazardous
+            </label>
+
+            <label>
+                <input type="checkbox" id="is_high_value" name="is_high_value">
+                High Value
+            </label>
+
+            <button type="submit">Search</button>
+        </form>
+
+        {% if results %}
+            <h2>Search Results (Top 5)</h2>
+            <p>Search completed in {{ search_time }} seconds.</p>
+            <div>{{ results|safe }}</div>
+        {% else %}
+            <p>No results found or search not yet performed.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

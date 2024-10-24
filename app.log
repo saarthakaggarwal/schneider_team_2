@@ -1,0 +1,89 @@
+2024-10-24 02:10:59,986 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-24 02:10:59,986 INFO: [33mPress CTRL+C to quit[0m
+2024-10-24 02:10:59,994 INFO:  * Restarting with watchdog (fsevents)
+2024-10-24 02:11:06,093 WARNING:  * Debugger is active!
+2024-10-24 02:11:06,123 INFO:  * Debugger PIN: 362-202-835
+2024-10-24 02:12:17,103 INFO: 127.0.0.1 - - [24/Oct/2024 02:12:17] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-24 02:12:17,106 INFO: Closing down clientserver connection
+2024-10-24 02:12:17,135 INFO: 127.0.0.1 - - [24/Oct/2024 02:12:17] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-24 02:12:17,136 INFO: 127.0.0.1 - - [24/Oct/2024 02:12:17] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-24 02:12:17,180 INFO: 127.0.0.1 - - [24/Oct/2024 02:12:17] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-24 02:12:17,192 INFO: 127.0.0.1 - - [24/Oct/2024 02:12:17] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-24 02:12:20,838 INFO: 127.0.0.1 - - [24/Oct/2024 02:12:20] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-24 02:12:20,845 INFO: Closing down clientserver connection
+2024-10-24 02:12:20,858 INFO: 127.0.0.1 - - [24/Oct/2024 02:12:20] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-24 02:12:20,863 INFO: 127.0.0.1 - - [24/Oct/2024 02:12:20] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-24 02:12:20,900 INFO: 127.0.0.1 - - [24/Oct/2024 02:12:20] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-24 02:12:20,911 INFO: 127.0.0.1 - - [24/Oct/2024 02:12:20] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-24 02:14:19,694 INFO:  * Detected change in '/Users/tanmaymodi/Schneider/app.py', reloading
+2024-10-24 02:14:20,461 INFO: Closing down clientserver connection
+2024-10-24 02:14:20,542 INFO:  * Restarting with watchdog (fsevents)
+2024-10-24 02:14:26,965 WARNING:  * Debugger is active!
+2024-10-24 02:14:26,996 INFO:  * Debugger PIN: 362-202-835
+2024-10-24 02:14:36,444 INFO: Closing down clientserver connection
+2024-10-24 02:14:36,517 INFO: Closing down clientserver connection
+2024-10-24 02:14:44,946 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-24 02:14:44,946 INFO: [33mPress CTRL+C to quit[0m
+2024-10-24 02:14:44,953 INFO:  * Restarting with watchdog (fsevents)
+2024-10-24 02:14:51,270 WARNING:  * Debugger is active!
+2024-10-24 02:14:51,306 INFO:  * Debugger PIN: 362-202-835
+2024-10-24 02:15:10,246 INFO: Search completed in 0.8301887512207031 seconds, final result count: 0
+2024-10-24 02:15:10,464 INFO: NumExpr defaulting to 8 threads.
+2024-10-24 02:15:10,851 INFO: 127.0.0.1 - - [24/Oct/2024 02:15:10] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-24 02:15:10,852 INFO: Closing down clientserver connection
+2024-10-24 02:15:10,874 INFO: 127.0.0.1 - - [24/Oct/2024 02:15:10] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-24 02:15:10,877 INFO: 127.0.0.1 - - [24/Oct/2024 02:15:10] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-24 02:15:10,918 INFO: 127.0.0.1 - - [24/Oct/2024 02:15:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-24 02:15:10,933 INFO: 127.0.0.1 - - [24/Oct/2024 02:15:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-24 02:15:46,621 INFO:  * Detected change in '/Users/tanmaymodi/Schneider/app.py', reloading
+2024-10-24 02:15:46,702 INFO: Closing down clientserver connection
+2024-10-24 02:15:46,789 INFO:  * Restarting with watchdog (fsevents)
+2024-10-24 02:15:54,785 WARNING:  * Debugger is active!
+2024-10-24 02:15:54,824 INFO:  * Debugger PIN: 362-202-835
+2024-10-24 02:15:59,074 INFO: Search completed in 1.0930430889129639 seconds, final result count: 0
+2024-10-24 02:15:59,378 INFO: 127.0.0.1 - - [24/Oct/2024 02:15:59] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-24 02:15:59,379 INFO: Closing down clientserver connection
+2024-10-24 02:15:59,404 INFO: 127.0.0.1 - - [24/Oct/2024 02:15:59] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-24 02:15:59,404 INFO: 127.0.0.1 - - [24/Oct/2024 02:15:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-24 02:15:59,444 INFO: 127.0.0.1 - - [24/Oct/2024 02:15:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-24 02:15:59,459 INFO: 127.0.0.1 - - [24/Oct/2024 02:15:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-24 02:21:09,397 INFO:  * Detected change in '/Users/tanmaymodi/Schneider/app.py', reloading
+2024-10-24 02:21:09,504 INFO: Closing down clientserver connection
+2024-10-24 02:21:09,636 INFO:  * Restarting with watchdog (fsevents)
+2024-10-24 02:21:16,201 WARNING:  * Debugger is active!
+2024-10-24 02:21:16,235 INFO:  * Debugger PIN: 362-202-835
+2024-10-24 02:21:23,264 INFO: Search completed in 0.9050359725952148 seconds, final result count: 0
+2024-10-24 02:21:23,396 INFO: 127.0.0.1 - - [24/Oct/2024 02:21:23] "POST / HTTP/1.1" 200 -
+2024-10-24 02:21:23,399 INFO: Closing down clientserver connection
+2024-10-24 02:21:49,108 INFO: Search completed in 0.14082098007202148 seconds, final result count: 0
+2024-10-24 02:21:49,186 INFO: 127.0.0.1 - - [24/Oct/2024 02:21:49] "POST / HTTP/1.1" 200 -
+2024-10-24 02:21:49,187 INFO: Closing down clientserver connection
+2024-10-24 02:23:50,952 INFO: Search completed in 0.14261984825134277 seconds, final result count: 0
+2024-10-24 02:23:51,009 INFO: 127.0.0.1 - - [24/Oct/2024 02:23:51] "POST / HTTP/1.1" 200 -
+2024-10-24 02:23:51,010 INFO: Closing down clientserver connection
+2024-10-24 02:28:49,917 INFO:  * Detected change in '/Users/tanmaymodi/Schneider/app.py', reloading
+2024-10-24 02:28:50,559 INFO: Closing down clientserver connection
+2024-10-24 02:28:50,675 INFO:  * Restarting with watchdog (fsevents)
+2024-10-24 02:28:55,286 WARNING:  * Debugger is active!
+2024-10-24 02:28:55,314 INFO:  * Debugger PIN: 362-202-835
+2024-10-24 02:30:14,340 INFO: 127.0.0.1 - - [24/Oct/2024 02:30:14] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-24 02:30:14,341 INFO: Closing down clientserver connection
+2024-10-24 02:30:14,364 INFO: 127.0.0.1 - - [24/Oct/2024 02:30:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-24 02:30:14,364 INFO: 127.0.0.1 - - [24/Oct/2024 02:30:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-24 02:30:14,414 INFO: 127.0.0.1 - - [24/Oct/2024 02:30:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-24 02:30:14,432 INFO: 127.0.0.1 - - [24/Oct/2024 02:30:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-24 02:32:03,468 INFO:  * Detected change in '/Users/tanmaymodi/Schneider/app.py', reloading
+2024-10-24 02:32:03,845 INFO: Closing down clientserver connection
+2024-10-24 02:32:03,958 INFO:  * Restarting with watchdog (fsevents)
+2024-10-24 02:32:08,297 WARNING:  * Debugger is active!
+2024-10-24 02:32:08,325 INFO:  * Debugger PIN: 362-202-835
+2024-10-24 02:32:15,887 INFO: Search completed in 1.7508697509765625 seconds, final result count: 0
+2024-10-24 02:32:15,892 INFO: 127.0.0.1 - - [24/Oct/2024 02:32:15] "POST / HTTP/1.1" 200 -
+2024-10-24 02:32:15,893 INFO: Closing down clientserver connection
+2024-10-24 02:32:36,884 INFO: Search completed in 0.1160440444946289 seconds, final result count: 0
+2024-10-24 02:32:36,885 INFO: 127.0.0.1 - - [24/Oct/2024 02:32:36] "POST / HTTP/1.1" 200 -
+2024-10-24 02:32:36,886 INFO: Closing down clientserver connection
+2024-10-24 02:32:51,876 INFO: Closing down clientserver connection
+2024-10-24 02:32:52,005 INFO: Closing down clientserver connection
