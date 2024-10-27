@@ -1,6 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, when, lit
 import time
+import pcmiller
 
 
 spark = SparkSession.builder.appName("LoadSearchAlgorithm").getOrCreate()
@@ -43,3 +44,33 @@ def testing(type_truck, radius, weight, posting_data, stop_data, origin, dest):
     print(f"Test Case 1 Result:")
     print(f"Time taken: {elapsed_time:.6f} seconds\n")
     return matching_ids
+
+
+
+
+def searchAlgo(type_truck, distance, weight, origin, dest):
+    posting_data = spark.read.csv("./load_posting.csv", header=True, inferSchema=True)
+    stop_data = spark.read.csv("./load_stop.csv", header=True, inferSchema=True)
+    
+    specific_loads = testing(type_truck, distance, weight, posting_data, stop_data, origin, dest)
+    
+    routes = []
+    
+    for load in specific_loads:
+        stops_for_load = stop_data.filter(col("LOAD_ID") == load)
+        spec_data = stops_for_load.collect()
+        stops = []
+        for s in spec_data:
+            stops.append({
+                "City": s["CITY"],
+                "State": s["STATE"],
+                "Zip": s["POSTAL_CODE"], # Assuming stop dict contains 'Label' key
+            })
+        print(stops)
+        ret = pcmiller.mapGenerator(stops)
+        routes.append(ret)
+        
+    return [specific_loads, routes]
+        
+        
+    
