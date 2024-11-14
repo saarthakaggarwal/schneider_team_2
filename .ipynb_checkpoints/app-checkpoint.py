@@ -29,6 +29,7 @@ def testing(type_truck, radius, weight, posting_data, stop_data, origin, dest):
     )
     
     
+    
     matching_origins = matching_stops.groupBy("LOAD_ID").agg(
         {"is_origin": "max"}
     ).filter(col("max(is_origin)") == True)

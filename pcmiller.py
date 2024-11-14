@@ -155,3 +155,39 @@ def mapGenerator(stop_list):
         print(f"Request timed out: {e}")
     except requests.exceptions.RequestException as e:
         print(f"Request failed: {e}")
+
+        
+        
+        
+
+def get_coords_by_zipcode(zipcode, region="NA"):
+    url = f"https://singlesearch.alk.com/{region}/api/search"
+    apikey = '299354C7A83A67439273691EA750BB7F'
+    params = {
+        "authToken": apikey,
+        "query": zipcode, 
+        "include": "Meta"  
+    }
+
+    try:
+        response = requests.get(url, params=params)
+
+        if response.status_code == 200:
+            data = response.json()
+
+            locations = data.get("Locations", [])
+            if locations:
+                coords = locations[0].get("Coords")
+                print(f"Coordinates for ZIP code {zipcode}: {coords}")
+                return coords
+            else:
+                print(f"No results found for ZIP code {zipcode}.")
+                return None
+        else:
+            print(f"Error {response.status_code}: {response.text}")
+            return None
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed: {e}")
+        return None
+
+
